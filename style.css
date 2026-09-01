@@ -1,0 +1,94 @@
+body {
+    background: #30e3ad;
+    background: linear-gradient(90deg, rgba(48, 227, 173, 1) 0%, rgba(168, 53, 184, 1) 50%, rgba(48, 227, 173, 1) 100%);
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.cabeçario {
+    padding: 25px 20 px;
+    border-bottom: 2px solid blueviolet;
+    box-shadow: 0 3px 15 px rgb(138, 43, 226, 0.25);
+}
+
+header {
+    background-color: antiquewhite;
+    font-style: unset;
+}
+
+.Receita {
+    background-color: antiquewhite;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding-bottom: 50px;
+    row-gap: 30px;
+}
+
+.Receita h2{
+    width: 100%;
+    text-align: center;
+    
+}
+
+.Receita h3{
+    width: 100%;
+    text-align: center;
+}
+
+.INGREDIENTES {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+
+.Base1{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly ;
+    gap: 30px;
+}
+
+.Base2{
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 3px solid black;
+    border-radius: 15px;
+
+    width: 25rem;
+    box-sizing: border-box;
+
+    overflow: hidden;
+}
+
+.Base2 iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    display: block;
+    border: none;
+}
+
+.Base2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+.Gambiara{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 69px;
+}
