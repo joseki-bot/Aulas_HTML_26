@@ -1,0 +1,74 @@
+body {
+    background: #30e3ad;
+    background: linear-gradient(90deg, rgba(48, 227, 173, 1) 0%, rgba(168, 53, 184, 1) 50%, rgba(48, 227, 173, 1) 100%);
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 0;
+    color: white;
+}
+
+header {
+    background-color: #160e1b;
+    width: 100vw;
+    margin-left: -15vw;
+    padding: 35px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #160e1b;
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    margin-left: -15vw;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+nav a {
+    width: 130px;
+    padding: 10px;
+
+    text-align: center;
+
+    background-color: #30203A;
+    color: white;
+
+    text-decoration: none;
+
+    border: 2px solid #666;
+    border-radius: 10px;
+
+    transition: 0.4s;
+}
+
+nav a:hover {
+    background-color: #a835b8;
+    border-color: white;
+}
+
+.Acordeao {
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.Acordeao summary {
+    background-color: #303d5c;
+    color: white;
+
+    padding: 20px;
+    font-size: 1.3rem;
+
+    cursor: pointer;
+}
+
+.ConteudoAcordeao {
+    background-color: white;
+    color: black;
+
+    padding: 20px;
+}
