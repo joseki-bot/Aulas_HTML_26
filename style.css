@@ -1,8 +1,8 @@
 body {
     background: #30e3ad;
     background: linear-gradient(90deg, rgba(48, 227, 173, 1) 0%, rgba(168, 53, 184, 1) 50%, rgba(48, 227, 173, 1) 100%);
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-top: 0;
     color: white;
 }
@@ -10,17 +10,19 @@ body {
 header {
     background-color: #160e1b;
     width: 100vw;
-    margin-left: -15vw;
+    margin-left: -10vw;
     padding: 35px 0;
     text-align: center;
 }
+
+/* CABEÇALHO */
 
 nav {
     background-color: #160e1b;
     position: sticky;
     top: 0;
     width: 100vw;
-    margin-left: -15vw;
+    margin-left: -10vw;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -50,6 +52,8 @@ nav a:hover {
     border-color: white;
 }
 
+/* ============================== */
+
 .Receita {
     background-color: #30203A;
 
@@ -73,11 +77,15 @@ nav a:hover {
     text-align: center;
 }
 
-.Base1{
+.Base1 {
     width: 100%;
     display: flex;
-    justify-content: space-evenly ;
+    justify-content: space-evenly;
     gap: 30px;
+
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
 }
 
 .Base2{
