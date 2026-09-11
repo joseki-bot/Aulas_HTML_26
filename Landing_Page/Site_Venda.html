@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+    <main>
+        <div class="Painel_Latereal">
+            
+            <h1>DETALHES</h1>
+            <ul>
+                <li>Cor: <div class="Marrom">Marrom</div> <br> </li>
+                <li>Marca: <div class="Marrom">Marrom</div> <br> </li>
+                <li>Compranda em: <div class="Marrom">Marrom</div> <br> </li>
+            </ul>
+
+            <h2>SOBRE</h2>
+            <p>Uma Oportunidade única de adquirir uma bicicleta marrom em ótimo estado, você nunca viu uma tão bonita!</p>
+        </div>
+
+        <div class="Base1">
+            <h1>VENDE-SE BICICLETA MARROM </h1>
+        </div>
+
+        <div class="Area_Img">
+            <img class="EMOJI" src="Emoji_Apontando.png">
+            <img class="GIF" src="Gif_bike.gif">
+            <img class="EMOJI" src="Emoji_Apontando_Esq.png">
+        </div>
+
+        <div class="Base2">
+            <h2>VALOR R$ 650,00</h2>
+        </div>
+
+            
+        <a href="https://wa.me/555191675993" target="_blank"> 
+            <img src="Whats.png">  
+        </a>
+
+        <div class="Placa">
+            <img src="img_Placa.png">
+        </div>
+
+    <div class="Barata">
+        <img src="Barata_Girando.gif" id="Barata" onclick="tocarSom()">
+    </div>
+
+    <audio id="SomBarata" src="Caminhao_Kun.mp3" loop></audio>
+
+    <script>
+        function tocarSom() {
+            const som = document.getElementById("SomBarata");
+            som.play();
+        }
+    </script>
+
+    </main>
+</body>
+</html>

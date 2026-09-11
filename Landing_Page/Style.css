@@ -1,0 +1,211 @@
+body{
+    background-color: #0e2c2c;
+    margin-left: 15%;
+    margin-right: 10%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+main{
+    background-color: #11b7bd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2%;
+    margin-left: 10%;
+    
+}
+
+/* Área Lateral */
+.Painel_Latereal{
+    background-color: #0b6f72;
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-radius: 2%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.Painel_Latereal h1{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    font-family: Comic Sans MS, cursive;
+}
+
+.Painel_Latereal h2{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    font-family: Comic Sans MS, cursive;
+}
+
+p{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: Comic Sans MS, cursive;
+}
+
+.Marrom{
+    color: #8B4513;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+/*====================================*/
+
+
+/* AREA DE DESTAQUE */
+.Base1{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    
+    background: linear-gradient(
+        90deg, rgba(255, 0, 0, 1) 0%, rgba(245, 229, 12, 1) 50%, rgba(163, 57, 96, 1) 100%
+    );
+
+    background-size: 200% 100%;
+    padding: 2px 0;
+    border-radius: 20px;
+    animation: Psicodelico 1s linear infinite;
+}
+
+.Base1 h1{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    font-family: Comic Sans MS, cursive;
+}
+
+@keyframes Psicodelico {
+
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/*==========================================================================*/
+
+
+/* ÁREA DE IMAGENS */
+.Area_Img{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 69%;
+    width: 200px;
+    height: 200px;
+}
+
+.EMOJI{
+    margin-top: 100px;
+    width: 200px;
+    height: 100px;
+}
+
+.GIF{
+    width: 400px;
+    height: 300px;
+    border: 3px dotted white;
+    border-radius: 5%;
+}
+/*====================================================================*/
+
+
+/* VALOR */
+.Base2{
+    width: 40%;
+    justify-content: center;
+    margin-top: 160px;
+    margin-bottom: 15px;
+    
+    background: #f7ff00;
+    background: linear-gradient(
+        90deg, rgba(247, 255, 0, 1) 0%, rgba(59, 245, 12, 1) 100%, rgba(163, 57, 96, 1) 100%
+    );
+
+    background-size: 200% 100%;
+    border-radius: 20px;
+    animation: Psicodelico 0.5s linear infinite;
+}
+
+.Base2 h2{
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    font-family: Comic Sans MS, cursive;
+}
+
+@keyframes Psicodelico {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/*====================================================================*/
+
+
+/* BOTÃO WHATS */
+a img{
+    width: 69px;
+    height: 69px;
+
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+.Placa img{
+    width: 80px;
+    height: 80px;
+
+    position: fixed;
+    right: 5px;
+    bottom: 70px;
+    animation: subirDescer 2s ease-in-out infinite;
+}
+
+@keyframes subirDescer {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+/*====================================================================*/
+
+/* BARATA */
+.Barata img{
+    width: 100px;
+    height: 100px;
+    
+    position: fixed;
+    right: 15px;
+    top: 5px;
+    cursor: pointer;
+    
+}
+
+/*===================================================================*/

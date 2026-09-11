@@ -1,0 +1,148 @@
+body {
+    background: #30e3ad;
+    background: linear-gradient(90deg, rgba(48, 227, 173, 1) 0%, rgba(168, 53, 184, 1) 50%, rgba(48, 227, 173, 1) 100%);
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+     overflow-x: hidden
+}
+
+header {
+    background-color: #160e1b;
+    width: 100vw;
+    margin-left: -5vw;
+    padding: 35px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #160e1b;
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    margin-left: -5vw;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+nav a {
+    width: 130px;
+    padding: 10px;
+
+    text-align: center;
+
+    background-color: #30203A;
+    color: white;
+
+    text-decoration: none;
+
+    border: 2px solid #666;
+    border-radius: 10px;
+
+    transition: 0.4s;
+}
+
+nav a:hover {
+    background-color: #a835b8;
+    border-color: white;
+}
+
+.Acordeao {
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.Acordeao summary {
+    background-color: #303d5c;
+    color: white;
+
+    padding: 20px;
+    font-size: 1.3rem;
+
+    cursor: pointer;
+}
+
+.ConteudoAcordeao {
+    background-color: white;
+    color: black;
+
+    padding: 20px;
+}
+
+details {
+    transform: translateY(10px);
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+summary {
+    background-color: #30203A;
+    color: white;
+
+    padding: 20px;
+
+    font-size: 25px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.Receitas {
+    background-color: white;
+    display: grid;
+
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(250px, 1fr)
+    );
+
+    gap: 25px;
+    padding: 25px;
+}
+
+.ReceitaCard {
+    text-decoration: none;
+    background-color: #30203A;
+    border: 3px solid #555;
+    border-radius: 15px;
+    overflow: hidden;
+    color: white;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.ReceitaCard img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+    transition: 0.3s;
+}
+
+.ReceitaCard h3 {
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+footer {
+    background-color: #573b68;
+    width: 100vw;
+    margin-left: -5vw;  
+    padding: 20px;
+    text-align: center;
+    color: rgb(245, 154, 94);
+    font-size: 0.9rem;
+
+    margin-top: auto;
+}
