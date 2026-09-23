@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background: #30e3ad;
     background: linear-gradient(90deg, rgba(48, 227, 173, 1) 0%, rgba(168, 53, 184, 1) 50%, rgba(48, 227, 173, 1) 100%);
@@ -178,14 +182,122 @@ nav a:hover {
 }
 
 /* RODA PÉ*/
-footer {
+footer{
     background-color: #573b68;
     width: 100vw;
-    margin-left: -10vw;  
+    margin-left: -10vw;
+    margin-top: auto;
     padding: 20px;
     text-align: center;
     color: rgb(245, 154, 94);
     font-size: 0.9rem;
-    margin-top: auto;
 }
 /*=============================*/
+
+/* AQUI É PARA OS IPAD */
+@media (max-width: 1024px) {
+    body {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    nav{
+        margin-left: 0;
+        height: +100px;
+    }
+    nav a{
+        width: 150px;
+        font-size: 2rem;
+        padding: 15px;
+    }
+
+    footer{
+        background-color: #3d264b;
+        font-size: 1.5rem;
+        margin-left: 0;
+    }
+
+    .Receita{
+        background-color: #533963;
+    }
+
+    .Base2{
+        
+        padding-right: 10px;
+    }
+    
+    .Base2 li{
+        font-size: 2rem;
+        padding-top: 20px;
+    }
+
+    .Reels{
+        width: 40vw;
+        height: 45vh;
+    }
+
+    .Base2 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .Base2 p {
+        font-size: 2rem;
+    }
+
+    .CaixaDireita, .CaixaEsquerda {
+        width: 90%;
+        font-size: 2rem;
+    }
+
+    .CaixaEsquerda li{
+        padding-top: 20px;
+    }
+
+    .CaixaDireita li{
+        padding-top: 20px;
+    }
+}
+/*========================================*/
+
+
+/* AQUI É PARA OS IPHONE */
+@media (max-width: 440px) {
+    body {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    nav{
+        margin-left: 0;
+        height: +100px;
+    }
+
+    nav a{
+        width: 110px;
+        font-size: 1.5rem;
+        padding-top: 25px;
+    }
+
+    .Base1 {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .Base2 {
+        width: 100%;
+        border: 6px solid black;
+    }
+
+    .Base2 h4{
+        font-size: 2.5rem;
+    }
+
+    .Reels {
+        width: 100%;
+        max-width: 300px;
+    }
+}
