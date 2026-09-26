@@ -7,26 +7,90 @@
     <link rel="stylesheet" href="./output.css">
 </head>
 
-<body  class="flex min-h-screen">
+<body  class="flex min-h-screen bg-blue-500">
+
+    <!-- CABEÇARIO -->
+    <header class="fixed top-0 left-0 w-full z-50 py-4 text-center 
+                    bg-black/70 animate-header-bg">
+        <h1 class="text-4xl font-serif text-white animate-ticker">
+            <strong>13° RINHA DE ROBÔS</strong>
+        </h1>
+    </header>
+    <!-------------------------------------------------------------------->
+
 
     <!-- PARTA DA ESQUERDA -->
-    <div class="w-1/2 bg-blue-500 border-r-10 border-black
-                flex flex-col gap-4">
-        <h1>asdfghj</h1>
-        <h1>000000000</h1>
+    <div class="relative w-1/2 h-screen bg-blue-500 border-r-10 border-black
+                flex flex-col items-center ml-10">
 
+        <div class="flex flex-col text-center gap-3 font-serif
+                    absolute top-10 left-30">
+            <h2 class="text-5xl">
+                <strong>PENSO LOGO</strong>
+                
+            </h2>
+            <h2 class="text-2xl"">
+                Meto na sua máquina de lavar
+            </h2>
+        </div>
+        <img src="Imagens/Robo_1.png" class="w-110 absolute bottom-3 left-20">
     </div>
     <!----------------------------------------------------------------->
 
 
-    <!---->
+    <!-- BOTÃO DE COMPRAR -->
+    <DIV class="text-3xl text-center bg-purple-400 border-7 border-black rounded-2xl p-5 absolute 
+                top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                transition-transform duration-300 hover:scale-150 cursor-pointer"
+        onclick="document.getElementById('popup-ingresso').classList.remove('hidden')">
 
+        <h1><strong>COMPRE JÁ O SEU</strong></h1>
+        <h1><strong>INGRESSO</strong></h1>
+    </DIV>
+    <!------------------------------------------------------------------->
 
+    
     <!-- PARTE DA DIREITA -->
-    <div class="w-1/2 bg-red-500">
+    <div class="w-1/2 bg-red-500  h-screen flex flex-col items-center">
+        
+        <div class="flex flex-col gap-3 font-serif items-center
+                    absolute bottom-5">
+            <h2 class="text-5xl">
+                <strong>COMPANHEIRO</strong>
+                
+            </h2>
+            <h2 class="text-2xl">
+                ProMax 3069
+            </h2>
+        </div>
+        <img src="Imagens/Robo_2.png" class="w-70 absolute top-3 right-40">
 
     </div>
     <!--------------------------------------------------------->
+
+
+    <!-- POP-UP -->
+    <div id="popup-ingresso" class="hidden fixed top-0 bottom-0 left-0 right-0 
+             z-50 flex items-center justify-center">
+        
+        <div class="bg-white rounded-2xl p-10 w-169 h-69 relative text-center ">
+            
+            <button onclick="document.getElementById('popup-ingresso').classList.add('hidden')"
+                    class="absolute top-3 right-4 text-2xl font-bold cursor-pointer">
+                &times;
+            </button>
+
+            <h2 class="text-2xl font-bold mb-4">
+                COMPRAR REALIZADA COM SUCESSO !!!
+            </h2>
+            <p class="mt-15">
+                O evento será realizado no Subsolo do McDonald's 24h. Horário: 03:42 da manhã
+            </p>
+            
+        </div>
+
+    </div>
+    <!----------------------------------------------------->
 
     
     
