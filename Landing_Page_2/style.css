@@ -3,8 +3,8 @@
 @import "tailwindcss";
 
 @theme {
-    --animate-ticker: ticker 6s ease-in-out infinite;
-    --animate-header-bg: header-bg 6s ease-in-out infinite;
+    --animate-ticker: ticker 10s ease-in-out infinite;
+    --animate-header-bg: header-bg 10s ease-in-out infinite;
 
     @keyframes ticker {
         0%, 50% {
