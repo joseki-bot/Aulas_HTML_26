@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+
+/*
+.nomeClasse {
+  @apply coisas DoTailwind;
+}
+
+Ex:
+
+.textoPrincipal {
+  @apply text-xl font-bold font-arial
+}
+*/
