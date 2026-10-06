@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body class="fundo">
+
+    <div class="TelaPrincipal">
+        
+        <div class="EscolhaRacao">
+
+            <div class="imagem">
+                <h2>Ração para Cachorro</h2>    
+                <img src="./Imagem/img_Racao_Cachorro.png" alt="Ração para Cachorro">
+
+                <DIv class="Area_BT">    
+                    
+                    <button id="menosCachorro" class="botao" onclick="addCarrinho()"> 
+                        <span> - </span> 
+                    </button>
+
+                    <H3 id="quantidadeCachorro">
+                        00
+                    </H3>
+
+                    <button id="maisCachorro" class="botao" onclick="tirarCarrinho()"> 
+                        <span> + </span> 
+                    </button>
+                </DIv>
+            </div>
+
+
+            <div class="imagem">
+                <h2>Ração para Gato</h2>
+                <img src="./Imagem/img_Racao_Gato.png" alt="Ração para Gato">
+
+                <DIv class="Area_BT">    
+                    
+                    <button id="menosGato" class="botao" onclick="addCarrinho()"> 
+                        <span> - </span> 
+                    </button>
+
+                    <H3 id="quantidadeGato">
+                        00
+                    </H3>
+
+                    <button id="maisGato" class="botao" onclick="tirarCarrinho()"> 
+                        <span> + </span> 
+                    </button>
+                </DIv>
+            </div>
+
+
+            <div class="imagem">
+                <h2>Ração para Coelho</h2>
+                <img src="./Imagem/img_Racao_Coelho.png" alt="Ração para Coelho">
+
+                <DIv class="Area_BT">    
+                    
+                    <button id="menosCoelho" class="botao" onclick="addCarrinho()"> 
+                        <span> - </span> 
+                    </button>
+
+                    <H3 id="quantidadeCoelho">
+                        00
+                    </H3>
+
+                    <button id="maisCoelho" class="botao" onclick="tirarCarrinho()"> 
+                        <span> + </span> 
+                    </button>
+                </DIv>
+            </div>
+
+
+            <div class="imagem">
+                <h2>Ração para Cavalo</h2>
+                <img src="./Imagem/img_Racao_Cavalo.png" alt="Ração para Cavalo">
+                <DIv class="Area_BT">    
+                    
+                    <button id="menosCavalo" class="botao" onclick="addCarrinho()"> 
+                        <span> - </span> 
+                    </button>
+
+                    <H3 id="quantidadeCavalo">
+                        00
+                    </H3>
+
+                    <button id="maisCavalo" class="botao" onclick="tirarCarrinho()"> 
+                        <span> + </span> 
+                    </button>
+                </DIv>
+            </div>
+
+
+            <div class="imagem">
+                <h2>Ração para Peixe</h2>
+                <img src="./Imagem/img_Racao_Peixe.png" alt="Ração para Peixe">
+
+                <DIv class="Area_BT">    
+                    
+                    <button id="menosPeixe" class="botao" onclick="addCarrinho()"> 
+                        <span> - </span> 
+                    </button>
+
+                    <H3 id="quantidadePeixe">
+                        00
+                    </H3>
+
+                    <button id="maisPeixe" class="botao" onclick="tirarCarrinho()"> 
+                        <span> + </span> 
+                    </button>
+                </DIv>
+            </div>
+
+        </div> <!--FECHA A DIV DE ESCOLHA DE RAÇÃO-->
+    </div> <!-- FECHA A DIV DA TELA PRINCIPAL -->
+
+
+    <div class="TelaCarrinho">
+        <div class="Carrinho">
+
+            <img src="./Imagem/img_Carrinho.png" alt="">
+
+            <div class="Area_Valor">
+                <h2> TOTAL:</h2>
+                <h2 id="total" class="valor"> R$ 0,00 </h2>
+            </div>
+
+
+        </div>
+    
+
+    </div> <!-- FECHA A DIV DA TELA PRINCIPAL -->
+
+    
+
+    <script src="./Script.js"></script>
+    
+</body>
+</html>
