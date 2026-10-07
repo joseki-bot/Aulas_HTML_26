@@ -351,10 +351,10 @@
   }
   .TelaCarrinho {
     position: static;
+    margin-inline: calc(var(--spacing) * 10);
     margin-top: auto;
-    margin-right: calc(var(--spacing) * 10);
     margin-bottom: calc(var(--spacing) * 5);
-    margin-left: calc(var(--spacing) * 10);
+    width: auto;
     border-radius: var(--radius-2xl);
   }
   .Carrinho {
@@ -370,6 +370,26 @@
   }
   .Img_Carrinho img {
     height: calc(var(--spacing) * 50);
+  }
+}
+@media (min-width: 1280px) {
+  .TelaPrincipal {
+    margin-right: calc(var(--spacing) * 10);
+    margin-left: calc(var(--spacing) * 10);
+  }
+  .EscolhaRacao {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+  .TelaCarrinho {
+    position: static;
+    margin-inline: calc(var(--spacing) * 10);
+    margin-top: auto;
+    margin-bottom: calc(var(--spacing) * 5);
+    width: auto;
+    border-radius: var(--radius-2xl);
+  }
+  .Img_Carrinho img {
+    height: calc(var(--spacing) * 30);
   }
 }
 @property --tw-border-style {

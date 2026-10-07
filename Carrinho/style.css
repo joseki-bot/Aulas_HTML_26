@@ -202,8 +202,11 @@
     .TelaCarrinho{
         @apply
         static
-        mt-auto ml-10 mr-10 mb-5
-        rounded-2xl
+        mt-auto
+        mx-10
+        mb-5
+        w-auto
+        rounded-2xl;
     }
 
     .Carrinho{
@@ -234,5 +237,34 @@
 
 
 /* == RESPONSIVIDADE PC (xl) == */
+@media (min-width: 1280px) {
+    .TelaPrincipal{
+        @apply
+        ml-10 mr-10
+        ;
+    }
 
+    .EscolhaRacao{
+        @apply
+        grid-cols-5
+        ;
+    }
+
+    .TelaCarrinho{
+        @apply
+        static
+        mt-auto
+        mx-10
+        mb-5
+        w-auto
+        rounded-2xl;
+    }
+
+    .Img_Carrinho img {
+        @apply
+        h-30
+        ;
+    }
+
+}
 /* ========================================= */
