@@ -23,6 +23,9 @@
     --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
+    --text-5xl: 3rem;
+    --text-5xl--line-height: 1;
+    --font-weight-normal: 400;
     --font-weight-bold: 700;
     --radius-2xl: 1rem;
     --radius-3xl: 1.5rem;
@@ -307,6 +310,67 @@
 }
 .Img_Carrinho img {
   height: calc(var(--spacing) * 25);
+}
+@media (min-width: 768px) {
+  @media (width >= 48rem) {
+    .TelaPrincipal {
+      margin-right: calc(var(--spacing) * 10);
+      margin-left: calc(var(--spacing) * 10);
+      padding: calc(var(--spacing) * 5);
+    }
+    .EscolhaRacao {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: calc(var(--spacing) * 10);
+    }
+    .imagem {
+      border-style: var(--tw-border-style);
+      border-width: 3px;
+    }
+    .imagem h2 {
+      border-bottom-style: var(--tw-border-style);
+      border-bottom-width: 3px;
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
+    }
+  }
+  .Area_BT {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 3px;
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
+  }
+  .imagem span {
+    height: calc(var(--spacing) * 11);
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .TelaCarrinho {
+    position: static;
+    margin-top: auto;
+    margin-right: calc(var(--spacing) * 10);
+    margin-bottom: calc(var(--spacing) * 5);
+    margin-left: calc(var(--spacing) * 10);
+    border-radius: var(--radius-2xl);
+  }
+  .Carrinho {
+    gap: calc(var(--spacing) * 30);
+  }
+  .Area_Valor {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+  .valor {
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
+  }
+  .Img_Carrinho img {
+    height: calc(var(--spacing) * 50);
+  }
 }
 @property --tw-border-style {
   syntax: "*";

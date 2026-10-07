@@ -153,4 +153,86 @@
 /* ======================================= */
 
 
-/* === RESPONSIVIDADE iPad === */
+/* === RESPONSIVIDADE iPad (md) === */
+@media (min-width: 768px) {
+    .TelaPrincipal {
+        @apply
+        md:ml-10 md:mr-10
+        md:p-5
+        ;
+    }
+
+    .EscolhaRacao{
+        @apply
+        md:grid
+        md:grid-cols-3
+        md:gap-10
+        ;
+    }
+
+    .imagem{
+        @apply
+        md:border-3
+        ;
+    }
+
+    .imagem h2{
+        @apply
+        md:text-2xl
+        md:border-b-3
+        ;
+    }
+
+    .Area_BT{
+        @apply
+        border-t-3
+        text-3xl
+        font-normal
+        ;
+    }
+
+    .imagem span{
+        @apply
+        font-bold
+        text-4xl
+        h-11
+        ;
+    }
+
+    .TelaCarrinho{
+        @apply
+        static
+        mt-auto ml-10 mr-10 mb-5
+        rounded-2xl
+    }
+
+    .Carrinho{
+        @apply
+        gap-30
+        ;
+    }
+
+    .Area_Valor {
+        @apply
+        text-4xl
+        ;
+    }
+
+    .valor{
+        @apply
+        text-5xl
+        ;
+    }
+
+    .Img_Carrinho img{
+        @apply
+        h-50
+        ;
+    }
+}
+/* ======================================== */
+
+
+/* == RESPONSIVIDADE PC (xl) == */
+
+/* ========================================= */
