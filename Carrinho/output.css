@@ -381,6 +381,20 @@
   background-color: var(--color-green-400);
   padding: calc(var(--spacing) * 2);
 }
+.P_Valor {
+  position: fixed;
+  inset: 0px;
+  z-index: 50;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.P_Valor.Aberto {
+  display: flex;
+}
+.Linha_Preco {
+  padding-bottom: calc(var(--spacing) * 2);
+}
 @media (min-width: 768px) {
   @media (width >= 48rem) {
     .TelaPrincipal {

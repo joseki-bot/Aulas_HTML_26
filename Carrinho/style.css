@@ -250,6 +250,33 @@
 /* ======================================== */
 
 
+/* TELA PARA MUDAR O VALOR */
+.P_Valor{
+    @apply
+    fixed 
+    inset-0 
+    z-50
+    hidden 
+    items-center 
+    justify-center
+    ;
+}
+
+.P_Valor.Aberto{
+    @apply
+    flex
+    ;
+}
+
+.Linha_Preco{
+    @apply
+    pb-2
+    ;
+}
+
+/* ======================================== */
+
+
 /* === RESPONSIVIDADE iPad (md) === */
 @media (min-width: 768px) {
     .TelaPrincipal {

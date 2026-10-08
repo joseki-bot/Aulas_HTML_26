@@ -200,3 +200,50 @@ botaoFechar.addEventListener(
     }
 );
 /* =====================================================*/
+
+
+/* === COISAS PARA O LOGIN === */
+let popUpLogin = document.getElementById("Pop_Up");
+let botaoFecharLogin = document.getElementById("fecharLogin");
+
+let formularioLogin = document.getElementById("formLogin");
+let telaPrecos = document.getElementById("P_Valor");
+/* ====================================================== */
+
+
+// === ABRIR O LOGIN ===
+botaoAbrir.addEventListener(
+    "click", function() {
+        popUpLogin.classList.add("Aberto");
+    }
+);
+/* ====================================================== */
+
+
+// === FECHAR O LOGIN ===
+botaoFecharLogin.addEventListener(
+    "click", function() {
+        popUpLogin.classList.remove("Aberto");
+    }
+);
+/* =========================================================== */
+
+
+// === VERIFICAR O LOGIN DO ADM ===
+formularioLogin.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    let usuario = document.getElementById("usuario").value;
+    let senha = document.getElementById("senha").value;
+
+    if (usuario === "admin" && senha === "T777") {
+        popUpLogin.classList.remove("Aberto");
+        telaPrecos.classList.add("Aberto");
+
+        formularioLogin.reset();
+    } else {
+        alert("Usuário ou senha incorretos!");
+    }
+});
+/* ============================================================== */
+
