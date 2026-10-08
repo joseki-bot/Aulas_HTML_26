@@ -175,3 +175,28 @@ menosPeixe.addEventListener(
     }
 );
 /* ============================================================*/
+
+
+/* COISAS DO POP-UP */
+let botaoAbrir = document.getElementById("AbrirPop");
+let popUp = document.getElementById("Pop_Up");
+let botaoFechar = document.getElementById("fecharLogin");
+/* ==================================================== */
+
+
+/* ABRIR O POP-UP */
+botaoAbrir.addEventListener(
+    "click", function() {
+        popUp.classList.add("Aberto");
+    }
+);
+/* ================================================== */
+
+
+/* FECHAR O POP-UP */
+botaoFechar.addEventListener(
+    "click", function() {
+        popUp.classList.remove("Aberto");
+    }
+);
+/* =====================================================*/

@@ -119,11 +119,14 @@
     </div> <!-- FECHA A DIV DA TELA PRINCIPAL -->
 
 
+<!-- === PARTO DO CARRINHO === -->
     <div class="TelaCarrinho">
         <div class="Carrinho">
 
             <div class="Img_Carrinho">
-                <img src="./Imagem/img_Carrinho.png" alt="">
+                <button id="AbrirPop">
+                    <img src="./Imagem/img_Carrinho.png" alt="">
+                </button>
             </div>
 
             <div class="Area_Valor">
@@ -131,11 +134,54 @@
                 <h2 id="total" class="valor"> R$ 0,00 </h2>
             </div>
 
-
         </div>
     
+    </div> <!-- === FECHA A DIV DO CARRINHO === -->
 
-    </div> <!-- FECHA A DIV DA TELA PRINCIPAL -->
+
+<!-- === PARTE DO POP-UP === -->
+    <div id="Pop_Up" class="Pop_Up">
+        <div class="P_A">
+            <h2 class="Titulo">
+                /ADM
+            </h2>
+
+            <form id="formLogin" class="Login">
+
+                <div class="Area_User">
+                    <label for="usuario">Usuário:</label>
+                    <input
+                        id="usuario"
+                        type="text"
+                        placeholder="Digite seu usuário"
+                        required
+                    >
+                </div>
+
+                <div class="Area_Senha">
+                    <label for="senha">Senha:</label>
+                    <input
+                        id="senha"
+                        type="password"
+                        placeholder="Digite sua senha"
+                        required
+                    >
+                </div>
+
+                <div class="P_bt">
+                    <button type="submit" class="bt_Entrar">
+                        Entrar
+                    </button>
+
+                    <button type="button" id="fecharLogin" class="bt_Fechar">
+                        Cancelar
+                    </button>
+                </div>
+            </form>
+
+        </div>
+    </div> <!-- FECHA A DIV DO POP-UP -->
+
 
     
 

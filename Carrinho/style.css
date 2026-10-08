@@ -153,6 +153,103 @@
 /* ======================================= */
 
 
+/* PARTE DO POP-UP */
+.Pop_Up {
+    @apply 
+    fixed 
+    inset-0 
+    z-50
+    hidden 
+    items-center 
+    justify-center
+    ;
+}
+
+.Pop_Up.Aberto {
+    @apply 
+    flex
+    ;
+}
+
+.P_A {
+    @apply 
+    bg-green-200
+    border-3
+    border-green-900 
+    rounded-2xl
+    p-5
+    w-full 
+    max-w-sm
+    ;
+}
+
+.Titulo{
+    @apply
+    text-3xl
+    w-full
+    text-center
+    pb-5
+    ;
+}
+
+.Login label{
+    @apply
+    flex
+    flex-col
+    w-full
+    items-center
+    justify-center
+    ;
+}
+
+.Area_User{
+    @apply
+    flex
+    flex-row
+    mb-3
+    ;
+}
+
+.Area_Senha{
+    @apply
+    flex
+    flex-row
+    mb-3
+    ;
+}
+
+.P_bt{
+    @apply
+    flex
+    w-full
+    items-center
+    justify-center
+    gap-30
+    ;
+}
+
+.bt_Entrar{
+    @apply
+    text-2xl
+    border-2
+    rounded-3xl
+    bg-green-400
+    p-2
+    ;
+}
+
+.bt_Fechar{
+    @apply
+    border-2
+    rounded-3xl
+    bg-green-400
+    p-2
+    ;
+}
+
+/* ======================================== */
+
+
 /* === RESPONSIVIDADE iPad (md) === */
 @media (min-width: 768px) {
     .TelaPrincipal {
