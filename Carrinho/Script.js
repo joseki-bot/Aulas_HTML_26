@@ -205,6 +205,7 @@ botaoFechar.addEventListener(
 /* === COISAS PARA O LOGIN === */
 let popUpLogin = document.getElementById("Pop_Up");
 let botaoFecharLogin = document.getElementById("fecharLogin");
+let botaoSalva = document.getElementById("Salvar");
 
 let formularioLogin = document.getElementById("formLogin");
 let telaPrecos = document.getElementById("P_Valor");
@@ -247,3 +248,39 @@ formularioLogin.addEventListener("submit", function(event) {
 });
 /* ============================================================== */
 
+
+//* === MUDAR O VALOR DAS RAÇÕES === */
+let formularioPrecos = document.getElementById("formPrecos");
+
+formularioPrecos.addEventListener(
+    "submit", function(event) {
+
+        event.preventDefault();
+
+        let novoCachorro = Number(document.getElementById("precoCachorro").value);
+        let novoGato = Number(document.getElementById("precoGato").value);
+        let novoCoelho = Number(document.getElementById("precoCoelho").value);
+        let novoCavalo = Number(document.getElementById("precoCavalo").value);
+        let novoPeixe = Number(document.getElementById("precoPeixe").value);
+
+        if (novoCachorro > 0) {
+            valorCachorro = novoCachorro;
+        }
+        if (novoGato > 0) {
+            valorGato = novoGato;
+        }
+        if (novoCoelho > 0) {
+            valorCoelho = novoCoelho;
+        }
+        if (novoCavalo > 0) {
+            valorCavalo = novoCavalo;
+        }
+        if (novoPeixe > 0) {
+            valorPeixe = novoPeixe;
+        }
+
+        telaPrecos.classList.remove("Aberto");
+        formularioPrecos.reset();
+        alert("Preços atualizados com sucesso!");
+    }
+);
